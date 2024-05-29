@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Warna latar belakang yang lebih terang */
+    color: #5a9642; /* Warna teks */
+}
+
+header {
+    background: linear-gradient(to right, #003366, #66CCCC);
+    color: #fff;
+    padding: 50px;
+    position: relative; /* Menjadikan posisi header relatif */
+}
+
+header img {
+    position: absolute; /* Menjadikan posisi gambar logo absolut */
+    top: 10px; /* Jarak dari atas */
+    right: 10px; /* Jarak dari kanan */
+    width: 100px; /* Ukuran lebar gambar */
+    height: auto; /* Memastikan proporsi asli gambar */
+    border-radius: 360px;
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 60px; /* Memberikan ruang di sisi kiri gambar */
+    font-size: 1.5em;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+section {
+    padding: 60px;
+    text-align: justify;
+    margin-bottom: 100px;
+    margin-top: 70px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih menonjol untuk konten */
+}
+
+section h2 {
+    color: #222; /* Warna judul konten yang lebih gelap */
+    border-bottom: 2px solid #222;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+p {
+    color: #666; /* Warna teks yang lebih gelap */
+}
+
+.poster {
+    margin-top: 50px; /* Mengurangi jarak atas poster */
+    margin-bottom: 100px; /* Mengurangi jarak bawah poster */
+    margin-left: auto; /* Menengahkan poster secara horizontal */
+    margin-right: auto; /* Menengahkan poster secara horizontal */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    width: 550px;
+    
+}
+
+.poster:hover {
+    transform: translateY(-5px);
+}
+
+.poster img {
+    width: 400px;
+    padding: 50px;
+    max-height: 100%; /* Menjadikan gambar tidak melebihi tinggi maksimum kontainer */
+    border-radius: 8px; /* Melengkungkan sudut */
+}
+
+
+/* Efek hover saat kursor diarahkan ke elemen poster */
+.poster:hover {
+    padding: 50px, 50px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan lebih menonjol */
+    transform: translateY(-5px); /* Menggeser elemen ke atas sedikit */
+    transition: all 0.3s ease; /* Animasi perpindahan saat hover */
+}
+
+
+footer {
+    background: linear-gradient(to right, #2196F3, #FFFFFF);/* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    text-align: center; /* Teks berada di tengah */
+    padding: 5px; /* Padding di dalam footer */
+    position: fixed; /* Footer tetap di bagian bawah layar */
+    bottom: 0; /* Footer menempel di bagian bawah */
+    width: 100%; /* Lebar footer mengisi keseluruhan layar */
+    
+}
+
+.footer-content {
+    display: flex; /* Mengatur konten footer dalam flexbox */
+    justify-content: center; /* Konten rata tengah */
+    align-items: center; /* Konten rata tengah secara vertikal */
+    
+}
+
+.footer-content p {
+    margin: 0; /* Menghilangkan margin bawaan */
+    color: #fff ;
+}
